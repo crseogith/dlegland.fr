@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://dlegland.fr/mentions-legales" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-   <style>
+    <style>
         :root { --blue: #0077be; --dark: #1a1a1a; --grey: #f4f4f4; }
         * { box-sizing: border-box; }
         body { 
@@ -17,10 +17,10 @@
             line-height: 1.8; 
             color: #333; 
             background: #fff; 
-            padding-top: 70px; /* Espace pour éviter que la nav cache le texte */
+            padding-top: 70px;
         }
-        
-        /* Navbar Fixe */
+
+        /* NAVBAR */
         nav { 
             background: var(--dark); 
             color: white; 
@@ -38,13 +38,13 @@
         }
         .logo { font-weight: bold; font-size: 1.2rem; color: white; text-decoration: none; }
 
-        /* Header Fixé */
+        /* HEADER */
         .main-header {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                         url('/header-dlegland.png');
             background-size: cover;
             background-position: center;
-            height: 60vh;
+            height: 40vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -52,20 +52,35 @@
             color: white;
             padding: 0 20px;
         }
+        .main-header h1 { font-size: 3rem; margin: 0; }
 
-        .header-content h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .header-content p { font-size: 1.3rem; opacity: 0.9; }
+        /* LAYOUT */
+        .main-wrapper { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            display: grid; 
+            grid-template-columns: 2fr 1fr; 
+            gap: 40px; 
+            padding: 0 20px; 
+        }
 
-        /* Contenu */
-        .main-wrapper { max-width: 1200px; margin: 40px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
         .content-area h2 { color: var(--blue); border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-top: 40px; font-size: 1.8rem; }
         .content-area h3 { color: var(--dark); margin-top: 30px; }
         .content-area p { margin-bottom: 20px; text-align: justify; }
 
-        .sidebar { background: var(--grey); padding: 25px; border-radius: 12px; height: fit-content; position: sticky; top: 100px; }
+        /* SIDEBAR */
+        .sidebar { 
+            background: var(--grey); 
+            padding: 25px; 
+            border-radius: 12px; 
+            height: fit-content; 
+            position: sticky; 
+            top: 100px; 
+        }
         .promo-card { background: var(--blue); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
         .promo-card a { color: white; font-weight: bold; text-decoration: underline; }
 
+        /* FOOTER */
         .site-footer { background: var(--dark); color: white; padding: 60px 20px; margin-top: 80px; }
         .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
         .footer-column h4 { color: var(--blue); margin-bottom: 20px; text-transform: uppercase; }
@@ -74,103 +89,106 @@
         .footer-column a:hover { color: white; }
         .footer-bottom { border-top: 1px solid #333; text-align: center; margin-top: 40px; padding-top: 20px; font-size: 0.8rem; color: #777; }
 
-        @media (max-width: 900px) { .main-wrapper { grid-template-columns: 1fr; } .header-content h1 { font-size: 2.2rem; } }
+        @media (max-width: 900px) { 
+            .main-wrapper { grid-template-columns: 1fr; } 
+            .main-header h1 { font-size: 2.2rem; } 
+        }
     </style>
 </head>
+
 <body>
 
 <nav>
-    <a href="https://dlegland.fr/" class="logo">DLEGLAND.FR</a> &nbsp;&nbsp;<a href="https://dlegland.fr/mentions-legales">Mentions Légales</a>
+    <a href="https://dlegland.fr/" class="logo">DLEGLAND.FR</a>
+    <a href="https://dlegland.fr/mentions-legales" style="color:white;">Mentions Légales</a>
 </nav>
 
-<header>
+<header class="main-header">
     <h1>Mentions Légales</h1>
 </header>
-<main class="content-area">
-<div class="container">
-    <h2>1. Présentation du site</h2>
-    <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <strong>dlegland.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
-    <p>
-        <strong>Propriétaire</strong> : dlegland.fr<br>
-        <strong>Responsable publication</strong> : Gaspard – Gaspard@dlegland.fr<br>
-        <strong>Webmaster</strong> : Jose
-    </p>
 
-    <h2>2. Hébergement</h2>
-    <p>
-        Le site est hébergé par la société <strong>GitHub, Inc.</strong><br>   
-Siège social : 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, États-Unis.<br>
-    
-    </p>
+<div class="main-wrapper">
 
-    <h2>3. Gestion des noms de domaine</h2>
-    <p>
-        Le nom de domaine est enregistré auprès du bureau d'enregistrement (registrar) suivant :<br>
-        <strong>Internet Domain Service BS Corp (InternetBS)</strong><br>
-        Adresse : 5th Avenue, Suite 23, 2nd Floor, Lyford Manor, Western Road, Lyford Cay, P.O. Box CB 13012, Nassau, Bahamas.<br>
-        Site web : <a href="https://internetbs.net" target="_blank" style="color:var(--blue);">internetbs.net</a>
-    </p>
+    <!-- CONTENT -->
+    <main class="content-area">
+        <h2>1. Présentation du site</h2>
+        <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <strong>dlegland.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+        <p>
+            <strong>Propriétaire</strong> : dlegland.fr<br>
+            <strong>Responsable publication</strong> : Gaspard – Gaspard@dlegland.fr<br>
+            <strong>Webmaster</strong> : Jose
+        </p>
 
-    <h2>4. Propriété intellectuelle</h2>
-    <p>Le propriétaire du site est titulaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes.</p>
-    <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.</p>
+        <h2>2. Hébergement</h2>
+        <p>
+            Le site est hébergé par <strong>GitHub, Inc.</strong><br>   
+            88 Colin P. Kelly Jr. St, San Francisco, CA 94107, États-Unis.
+        </p>
 
-    <h2>5. Gestion des données personnelles</h2>
-    <p>Le site n'est pas déclaré à la CNIL car il ne recueille pas d'informations personnelles identifiables de manière automatisée, hors formulaires de contact volontaires dont les données ne sont pas cédées à des tiers.</p>
-</div>
+        <h2>3. Gestion des noms de domaine</h2>
+        <p>
+            Registrar : <strong>InternetBS</strong><br>
+            Adresse : Lyford Manor, Nassau, Bahamas.<br>
+            Site : <a href="https://internetbs.net" target="_blank" style="color:var(--blue);">internetbs.net</a>
+        </p>
+
+        <h2>4. Propriété intellectuelle</h2>
+        <p>Le propriétaire du site est titulaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site.</p>
+
+        <h2>5. Gestion des données personnelles</h2>
+        <p>Le site ne collecte aucune donnée personnelle automatisée, hors formulaires volontaires.</p>
     </main>
 
-<aside class="sidebar">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="promo-card">
+            <h4>Navigation rapide</h4>
+            <p>Retour aux pages principales :</p>
+            <a href="/">Accueil →</a>
+        </div>
 
-    <div class="promo-card">
-        <h4>Navigation rapide</h4>
-        <p>Retour aux pages principales :</p>
-        <a href="/">Accueil →</a>
-    </div>
+        <h3>Pages principales</h3>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/catamaran-crete-avril.html">Catamaran Crète Avril</a></li>
+            <li><a href="https://catamaran-crete.fr/">Crète en catamaran</a></li>
+            <li><a href="https://crete-catamaran.com/">Croisière en catamaran</a></li>
+        </ul>
+    </aside>
 
-    <h3>Pages principales</h3>
-    <ul style="list-style: none; padding: 0;">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/catamaran-crete-avril.html">Catamaran Crète Avril</a></li>
-        <li><a href="https://catamaran-crete.fr/">Crète en catamaran</a></li>
-        <li><a href="https://crete-catamaran.com/">Croisière en catamaran</a></li>
-    </ul>
-
-</aside>
-
+</div>
 
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-column">
             <h4>catamaran-crete.fr</h4>
-            <p>Expertise nautique en Méditerranée. Spécialiste des croisières en catamaran haut de gamme en Crète.</p>
+            <p>Expertise nautique en Méditerranée.</p>
         </div>
+
         <div class="footer-column">
             <h4>Liens Utiles</h4>
             <ul>
                 <li><a href="https://f5bzk.fr/">Activités Crète</a></li>
                 <li><a href="https://dlegland.fr/mentions-legales">Mentions Légales</a></li>
                 <li><a href="https://catamaran-crete.fr/">Crète en catamaran</a></li>
-<li><a href="https://crete-catamaran.com/">Croisière en catamaran</a></li>
-<li><a href="https://croisiere-catamaran.fr/">Croisière en catamaran</a></li>
-  <li><a href="https://tiptopemploi.fr/">Emploi skipper sur catamaran</a></li>
+                <li><a href="https://crete-catamaran.com/">Croisière en catamaran</a></li>
+                <li><a href="https://croisiere-catamaran.fr/">Croisière en catamaran</a></li>
+                <li><a href="https://tiptopemploi.fr/">Emploi skipper</a></li>
             </ul>
         </div>
+
         <div class="footer-column">
             <h4>Suivez-nous</h4>
-            <div class="social-links">
-                <a href="https://www.facebook.com/croisiere.crete" target="_blank">Facebook</a><br>
-                <a href="https://www.instagram.com/croisieres.crete" target="_blank">Instagram</a>
-                <a href="https://croisieres-bien-etre.mediterraloc.com">Croisières bien-être</a>
- <a href="https://offresvoyages.fr/croisieres/">Croisières mondiales</a>
- <a href="https://culture-histoire.legoutdularge.eu/">Croisières culture et histoire</a>
-<a href="https://croisieres-sportives-aventures.legoutdularge.eu/">Croisières sportives et aventures</a>
-           <a href="https://cap-reno.fr">Expert en croisières</a>
-<a href="https://culture-histoire.legoutdularge.eu/">Croisières culture et histoire</a>
-
-            </div>
+            <a href="https://www.facebook.com/croisiere.crete" target="_blank">Facebook</a><br>
+            <a href="https://www.instagram.com/croisieres.crete" target="_blank">Instagram</a><br>
+            <a href="https://croisieres-bien-etre.mediterraloc.com">Croisières bien-être</a><br>
+            <a href="https://offresvoyages.fr/croisieres/">Croisières mondiales</a><br>
+            <a href="https://culture-histoire.legoutdularge.eu/">Croisières culture</a><br>
+            <a href="https://croisieres-sportives-aventures.legoutdularge.eu/">Croisières sportives</a><br>
+            <a href="https://cap-reno.fr">Expert en croisières</a>
         </div>
     </div>
+
     <div class="footer-bottom">
         <p>&copy; <span id="current-year"></span> dlegland.fr - Navigation Crète Avril.</p>
     </div>
