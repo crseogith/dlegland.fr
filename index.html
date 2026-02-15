@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catamaran Crète en Avril 2026 : Navigation & Conseils</title>
+    <title>Guide Complet Emploi Catamaran 2026 : Carrière, Diplômes et Recrutement</title>
     <style>
         :root { --blue: #0077be; --dark: #1a1a1a; --grey: #f4f4f4; }
         * { box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding-top: 60px; /* IMPORTANT: Empêche le texte de se cacher sous la nav */ line-height: 1.8; color: #333; background: #fff; }
         
-        /* Navbar Fixe et Visible */
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            padding-top: 70px; /* Espace pour la navbar fixe */
+            line-height: 1.8; 
+            color: #333; 
+            background: #fff; 
+        }
+        
+        /* Navbar Fixe */
         nav { 
             background: var(--dark); 
             color: white; 
@@ -21,15 +29,13 @@
             top: 0; 
             left: 0;
             width: 100%; 
-            height: 60px;
-            z-index: 1000; 
-            border-bottom: 2px solid var(--blue);
+            height: 70px;
+            z-index: 2000; 
+            border-bottom: 3px solid var(--blue);
         }
         .logo { font-weight: bold; font-size: 1.2rem; color: white; text-decoration: none; }
-        nav div a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; transition: 0.3s; }
-        nav div a:hover { color: var(--blue); }
 
-        /* Header avec syntaxe corrigée */
+        /* Header Réparé */
         .main-header {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                         url('https://dlegland.fr/header-dlegland.png');
@@ -44,66 +50,81 @@
             padding: 0 20px;
         }
 
-        .header-content h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .header-content p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 25px; }
-        .header-btn { padding: 12px 30px; background: var(--blue); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .header-content h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); line-height: 1.2; }
+        .header-content p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 25px; font-weight: 300; }
+        .header-btn { padding: 12px 35px; background: var(--blue); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .header-btn:hover { background: white; color: var(--blue); }
 
-        /* Layout */
+        /* Contenu */
         .main-wrapper { max-width: 1200px; margin: 40px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
-        .content-area h2 { color: var(--blue); border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-top: 30px; }
+        .content-area h2 { color: var(--blue); border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-top: 40px; }
+        .content-area h3 { color: var(--dark); margin-top: 25px; }
         .content-area p { margin-bottom: 20px; text-align: justify; }
 
         /* Sidebar */
-        .sidebar { background: var(--grey); padding: 25px; border-radius: 12px; height: fit-content; position: sticky; top: 80px; }
+        .sidebar { background: var(--grey); padding: 25px; border-radius: 12px; height: fit-content; position: sticky; top: 100px; }
         .promo-card { background: var(--blue); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        .promo-card a { color: white; font-weight: bold; }
+        .promo-card a { color: white; font-weight: bold; text-decoration: underline; }
 
         /* Footer */
-        .site-footer { background: var(--dark); color: white; padding: 40px 20px; margin-top: 60px; }
-        .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .site-footer { background: var(--dark); color: white; padding: 60px 20px; margin-top: 80px; }
+        .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-column h4 { color: var(--blue); margin-bottom: 20px; }
+        .footer-column ul { list-style: none; padding: 0; }
         .footer-column a { color: #bbb; text-decoration: none; font-size: 0.9rem; }
+        .footer-bottom { border-top: 1px solid #333; text-align: center; margin-top: 40px; padding-top: 20px; color: #777; font-size: 0.8rem; }
 
-        @media (max-width: 900px) { .main-wrapper { grid-template-columns: 1fr; } .header-content h1 { font-size: 2rem; } }
+        @media (max-width: 900px) { .main-wrapper { grid-template-columns: 1fr; } .header-content h1 { font-size: 2.2rem; } }
     </style>
 </head>
 <body>
 
 <nav>
     <a href="https://dlegland.fr/" class="logo">DLEGLAND.FR</a>
-    <div>
-        <a href="#meteo">Météo</a>
-        <a href="#itineraires">Itinéraires</a>
-        <a href="#faq">FAQ</a>
-    </div>
 </nav>
 
 <header class="main-header">
     <div class="header-content">
-        <h1>Catamaran Crète en Avril</h1>
-        <p>Le guide expert pour naviguer au printemps 2026.</p>
-        <a href="#contenu" class="header-btn">Lire le guide</a>
+        <h1>Travailler sur Catamaran : Le Guide Pro 2026</h1>
+        <p>Expertise, recrutement et perspectives de carrière dans le nautisme de luxe.</p>
+        <a href="#guide" class="header-btn">Découvrir le guide</a>
     </div>
 </header>
 
-<div class="main-wrapper" id="contenu">
+<div class="main-wrapper" id="guide">
     <main class="content-area">
-        <h2>Naviguer en Avril : L'expérience privilégiée</h2>
-        <p>Contrairement aux idées reçues, le mois d'avril est l'une des meilleures périodes pour découvrir la Crète par la mer. La nature explose, le soleil est déjà généreux et les sites touristiques comme Balos ou Elafonissi retrouvent leur calme sauvage.</p>
+        <p>L'industrie du nautisme a radicalement changé. En 2026, l'emploi sur catamaran de croisière ne se résume plus à une simple saison au soleil. C'est une filière exigeante, structurée par des réglementations internationales strictes et une attente client au plus haut niveau. Que vous soyez un jeune diplômé du Capitaine 200 ou une hôtesse issue de l'hôtellerie de luxe, comprendre les rouages du recrutement est essentiel.</p>
+
+        <h2>1. Skipper de Catamaran : Au-delà de la navigation</h2>
+        <p>Le skipper professionnel en 2026 est avant tout un chef d'entreprise mobile. Responsable d'une unité valant souvent entre 1 et 3 millions d'euros, sa mission va bien au-delà de la simple tenue de barre. Il doit maîtriser la gestion technique des systèmes hybrides, de plus en plus présents sur les unités modernes comme les Lagoon ou les Fountaine Pajot.</p>
         
-        <p>La visibilité est exceptionnelle, permettant d'admirer les sommets enneigés depuis votre cockpit. C'est la saison de l'authenticité, où l'accueil dans les ports de la côte Sud comme Loutro ou Paleochora est véritablement sincère, loin de la cohue estivale.</p>
+        <h3>Les compétences techniques indispensables</h3>
+        <p>Un bon skipper doit être capable d'intervenir sur un moteur diesel, de diagnostiquer une panne sur un dessalinisateur ou de gérer un parc de batteries Lithium-Ion. La domotique embarquée nécessite une aisance avec les outils numériques. La sécurité, régie par les normes STCW, impose une rigueur de chaque instant.</p>
         
-        </main>
+        <h2>2. Hôtesse de bord : L'excellence opérationnelle</h2>
+        <p>Souvent sous-estimé, le rôle d'hôtesse sur un catamaran est le pilier de la satisfaction client. Sur un multicoque de 50 pieds, l'espace est généreux, mais l'exigence de propreté et de service est celle d'un palace. L'hôtesse gère l'avitaillement, une logistique complexe qui demande de connaître les meilleurs fournisseurs locaux.</p>
+
+        <h2>3. La vie à bord : Réalités et contraintes</h2>
+        <p>Travailler en équipage réduit impose une promiscuité qu'il faut savoir gérer. La gestion du sommeil et la fatigue physique demandent une résistance psychologique forte. Cependant, les avantages sont uniques : une liberté totale et une rémunération attractive.</p>
+
+        <h2>4. FAQ : Questions cruciales pour votre carrière</h2>
+        <h4 style="color:var(--blue);">Quel est le salaire réel d'un équipage ?</h4>
+        <p>Un skipper indépendant en 2026 facture ses services entre 250€ et 450€ par jour. Une hôtesse entre 180€ et 300€. En contrat saisonnier, le salaire net moyen pour un skipper est de 3800€, nourri et logé.</p>
+        
+        <h4 style="color:var(--blue);">Comment se démarquer ?</h4>
+        <p>Le CV ne suffit plus. Les propriétaires recherchent des "soft skills" : discrétion, capacité d'adaptation et une solide culture générale.</p>
+    </main>
 
     <aside class="sidebar">
         <div class="promo-card">
-            <h4>Besoin d'un devis ?</h4>
-            <p>Le capitaine organise votre croisière sur mesure.</p>
-            <a href="https://croisiere-crete.com/contact-rdv-avec-le-capitaine/">Contacter le capitaine</a>
+            <h4>Besoin d'un Catamaran ?</h4>
+            <p>Découvrez nos offres exclusives en Crète.</p>
+            <a href="https://f5bzk.fr">Voir les locations →</a>
         </div>
-        <h4 style="margin-top:0;">Croisières en Crète</h4>
+        <h3>Nos autres croisières</h3>
         <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom:10px;"><a href="https://catamaran-crete.fr/" style="color:var(--blue); text-decoration:none;">• Crète en catamaran</a></li>
-            <li style="margin-bottom:10px;"><a href="https://crete-catamaran.com/" style="color:var(--blue); text-decoration:none;">• Croisière privatisée</a></li>
+          <li><a href="https://catamaran-crete.fr/" style="color:var(--blue); text-decoration:none;">• Crète en catamaran</a></li>
+          <li><a href="https://crete-catamaran.com/" style="color:var(--blue); text-decoration:none;">• Croisière privatisée</a></li>
         </ul>
     </aside>
 </div>
@@ -111,19 +132,24 @@
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-column">
-            <h4 style="color:var(--blue)">dlegland.fr</h4>
-            <p style="font-size:0.9rem">Expertise nautique et croisières privées en Méditerranée.</p>
+            <h4>dlegland.fr</h4>
+            <p>Spécialiste du recrutement nautique pour croisières privées et luxe. Embarquez pour l'aventure 2026.</p>
         </div>
         <div class="footer-column">
-            <h4 style="color:var(--blue)">Liens</h4>
-            <a href="https://f5bzk.fr/">Activités</a><br>
-            <a href="https://dlegland.fr/mentions-legales">Légal</a>
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="https://f5bzk.fr/">Activité Crète</a></li>
+                <li><a href="https://dlegland.fr/catamaran-crete-avril.html">Catamaran Avril</a></li>
+            </ul>
         </div>
         <div class="footer-column">
-            <h4 style="color:var(--blue)">Suivez-nous</h4>
+            <h4>Réseaux</h4>
             <a href="https://www.facebook.com/croisiere.crete">Facebook</a><br>
             <a href="https://www.instagram.com/croisieres.crete">Instagram</a>
         </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> dlegland.fr - Tous droits réservés.</p>
     </div>
 </footer>
 
