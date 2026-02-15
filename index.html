@@ -13,19 +13,31 @@
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.8; color: #333; background: #fff; }
         
         /* Navbar rétablie */
-        nav { 
-            background: var(--dark); 
-            color: white; 
-            padding: 15px 30px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-        }
-        .logo { font-weight: bold; font-size: 1.2rem; color: white; text-decoration: none; }
-        nav a { color: white; text-decoration: none; margin-left: 15px; font-size: 0.9rem; }
+       nav { 
+    background: #1a1a1a; /* Noir profond */
+    color: white; 
+    padding: 15px 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; /* On passe en fixed pour être sûr qu'elle survole tout */
+    width: 100%;
+    top: 0; 
+    z-index: 2000; /* Priorité maximale */
+    border-bottom: 3px solid var(--blue); /* Ligne bleue pour la visibilité */
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover { 
+    color: var(--blue); 
+}
 
         /* Header réparé (Syntaxe propre) */
         .main-header {
