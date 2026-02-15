@@ -8,41 +8,22 @@
     <link rel="canonical" href="https://dlegland.fr/" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="google-site-verification" content="6oSSF6f1m-gtfxU15pvrxJBQenIU9Ts4S2KUgtAoaJ4" />
-    <style>
-        :root { --blue: #0077be; --dark: #1a1a1a; --grey: #f4f4f4; }
-        * { box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.8; color: #333; background: #fff; }
-        nav { background: var(--dark); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: bold; font-size: 1.2rem; color: white; text-decoration: none; }
-        header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                        url('https://dlegland.fr/header-dlegland.png');');
-            background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center;
-        }
-        .main-wrapper { max-width: 1200px; margin: 40px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
-        .content-area h1 { color: var(--blue); font-size: 2.5rem; line-height: 1.2; }
-        .content-area h2 { color: var(--blue); border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-top: 40px; font-size: 1.8rem; }
-        .content-area h3 { color: var(--dark); margin-top: 30px; }
-        .content-area p { margin-bottom: 20px; text-align: justify; }
-        .sidebar { background: var(--grey); padding: 25px; border-radius: 12px; height: fit-content; position: sticky; top: 20px; }
-        .promo-card { background: var(--blue); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        .promo-card a { color: white; font-weight: bold; text-decoration: underline; }
-        .site-footer { background: var(--dark); color: white; padding: 60px 20px 20px; margin-top: 80px; }
-        .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
-        .footer-column h4 { color: var(--blue); margin-bottom: 20px; text-transform: uppercase; }
-        .footer-column ul { list-style: none; padding: 0; }
-        .footer-column a { color: #bbb; text-decoration: none; transition: 0.3s; }
-        .footer-column a:hover { color: white; }
-        .footer-bottom { border-top: 1px solid #333; text-align: center; margin-top: 40px; padding-top: 20px; font-size: 0.8rem; color: #777; }
-        @media (max-width: 900px) { .main-wrapper { grid-template-columns: 1fr; } }
-        .main-header {
-        /* On utilise une image de catamaran de luxe avec un overlay sombre */
+   <style>
+    :root { --blue: #0077be; --dark: #1a1a1a; --grey: #f4f4f4; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.8; color: #333; background: #fff; }
+    
+    nav { background: var(--dark); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    .logo { font-weight: bold; font-size: 1.2rem; color: white; text-decoration: none; }
+
+    /* LE CORRECTIF EST ICI */
+    .main-header {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                    url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1600&q=80');
+                    url('https://dlegland.fr/header-dlegland.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed; /* Effet parallaxe léger */
-        height: 70vh; /* 70% de la hauteur de l'écran */
+        background-attachment: fixed;
+        height: 70vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,7 +50,7 @@
     .header-btn {
         display: inline-block;
         padding: 15px 35px;
-        background-color: #0077be;
+        background-color: var(--blue);
         color: white;
         text-decoration: none;
         border-radius: 5px;
@@ -84,12 +65,29 @@
         transform: translateY(-3px);
     }
 
-    /* Responsive pour mobile */
-    @media (max-width: 768px) {
+    .main-wrapper { max-width: 1200px; margin: 40px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
+    .content-area h1 { color: var(--blue); font-size: 2.5rem; line-height: 1.2; }
+    .content-area h2 { color: var(--blue); border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-top: 40px; font-size: 1.8rem; }
+    .content-area h3 { color: var(--dark); margin-top: 30px; }
+    .content-area p { margin-bottom: 20px; text-align: justify; }
+    
+    .sidebar { background: var(--grey); padding: 25px; border-radius: 12px; height: fit-content; position: sticky; top: 80px; }
+    .promo-card { background: var(--blue); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .promo-card a { color: white; font-weight: bold; text-decoration: underline; }
+
+    .site-footer { background: var(--dark); color: white; padding: 60px 20px 20px; margin-top: 80px; }
+    .footer-container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+    .footer-column h4 { color: var(--blue); margin-bottom: 20px; text-transform: uppercase; }
+    .footer-column ul { list-style: none; padding: 0; }
+    .footer-column a { color: #bbb; text-decoration: none; transition: 0.3s; }
+    .footer-bottom { border-top: 1px solid #333; text-align: center; margin-top: 40px; padding-top: 20px; font-size: 0.8rem; color: #777; }
+
+    @media (max-width: 900px) { 
+        .main-wrapper { grid-template-columns: 1fr; } 
         .header-content h1 { font-size: 2.2rem; }
         .main-header { height: 60vh; }
     }
-    </style>
+</style>
 </head>
 <body>
 
